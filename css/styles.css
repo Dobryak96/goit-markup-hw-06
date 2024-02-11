@@ -13,17 +13,17 @@ ol {
     list-style: none;
 }
 
-.text-logo {
+.page-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
 }
 
-.page-logo {
+.text-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -45,6 +45,10 @@ ol {
 .nav-link:hover,
 .nav-link:focus {
     color: #404BBF;
+}
+
+.adress {
+    font-style: normal;
 }
 
 .address-link {
@@ -185,6 +189,10 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+}
+
+.text-logo-footer {
+    color: #f4f4fd;
 }
 
 .contant-footer {
