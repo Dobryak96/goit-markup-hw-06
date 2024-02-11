@@ -62,8 +62,6 @@ ol {
 }
 
 .top-section {
-    width: 1440px;
-    height: 600px;
     background: #2e2f42;
 }
 
@@ -71,7 +69,7 @@ ol {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
@@ -85,6 +83,7 @@ ol {
     letter-spacing: 0.04em;
     color: #fff;
     background: #4d5ae5;
+    cursor: pointer;
 }
 
 .button-text:hover,
@@ -111,8 +110,6 @@ ol {
 }
 
 .team-section {
-    width: 1440px;
-    height: 732px;
     background: #f4f4fd;
 }
 
@@ -120,7 +117,7 @@ ol {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
@@ -147,16 +144,11 @@ ol {
     color: #434455;
 }
 
-.portfolio-section {
-    width: 1128px;
-    height: 1000px;
-}
-
 .text-portfolio {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11111;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
@@ -182,8 +174,6 @@ ol {
 }
 
 .page-footer {
-    width: 1440px;
-    height: 312px;
     background: #2e2f42;
 }
 
@@ -191,10 +181,10 @@ ol {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #f4f4fd;
+    color: #4d5ae5;
 }
 
 .contant-footer {
