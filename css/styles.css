@@ -103,7 +103,6 @@ ol {
 }
 
 .main-content {
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -118,9 +117,14 @@ ol {
     font-family: "Roboto", sans-serif;
     font-size: 36px;
     line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+}
+
+.nav-list {
+    background-color: #FFFFFF;
 }
 
 .text-portfolio {
@@ -128,9 +132,9 @@ ol {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-align: center;
     color: #2e2f42;
 }
 
