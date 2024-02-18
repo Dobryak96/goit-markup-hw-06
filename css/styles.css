@@ -53,7 +53,7 @@ img {
 .page-header-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    align-items: center;
 }
 
 .main-navigation {
