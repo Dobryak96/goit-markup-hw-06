@@ -33,9 +33,9 @@ img {
 
 .container {
     width: 1158px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto 0 auto;
 }
 
 .section {
