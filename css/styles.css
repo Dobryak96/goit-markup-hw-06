@@ -34,8 +34,8 @@ img {
 .container {
     width: 1158px;
     padding-left: 15px;
-    padding-right: 015px;
-    margin: 0;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .section {
@@ -80,9 +80,6 @@ img {
     justify-content: space-between;
     gap: 40px;
     margin-left: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    margin-left: 76px;
 }
 
 .text-logo {
@@ -102,6 +99,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .nav-link:hover,
@@ -258,10 +257,7 @@ img {
 
 .nav-list {
     width: calc((100% - 3 * 24px) / 4);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-right-radius: 4px;
-    border-bottom-left-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .person-list {
