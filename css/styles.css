@@ -27,6 +27,10 @@ ol {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
 .container {
     width: 1158px;
     padding-left: 0;
@@ -42,6 +46,10 @@ ol {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
 }
 
 /* ****Header***** */
@@ -56,6 +64,7 @@ ol {
     display: flex;
     justify-content: space-between;
     margin-left: 156px;
+    align-items: center;
 }
 
 .page-logo {
@@ -66,6 +75,7 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+
 }
 
 .menu {
@@ -73,7 +83,9 @@ ol {
     justify-content: space-between;
     gap: 40px;
     margin-left: 76px;
-
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-left: 76px;
 }
 
 .text-logo {
@@ -107,6 +119,8 @@ ol {
 .page-address {
     display: flex;
     gap: 40px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .address-link {
@@ -128,8 +142,8 @@ ol {
     width: 1440px;
     height: 600px;
     margin: auto;
-
-
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .top-text {
@@ -163,6 +177,7 @@ ol {
     border-radius: 4px;
     height: 56px;
     min-width: 169px;
+    border: none;
 }
 
 .button-text:hover,
@@ -245,13 +260,8 @@ ol {
 }
 
 .nav-list {
-    height: 380px;
-    border-radius: 0px 0px 4px 4px;
-    background: #FFF;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 3 * 24px) / 4)
 }
-
-
 
 .person-list {
     padding: 32px 0;
@@ -278,8 +288,8 @@ ol {
 
 /* ****Section 4***** */
 .portfolio-section {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .text-portfolio {
@@ -299,6 +309,10 @@ ol {
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 48px;
+}
+
+.content-portfolio-list {
+    width: calc((100% - 48px) / 3);
 }
 
 .page-portflio {
@@ -335,6 +349,8 @@ ol {
     width: 1440px;
     height: 312px;
     margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 
 }
@@ -354,6 +370,8 @@ ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .text-logo-footer {
