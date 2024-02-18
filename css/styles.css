@@ -44,7 +44,6 @@ img {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
-    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -55,7 +54,6 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
-    margin: 0 auto;
 }
 
 .main-navigation {
