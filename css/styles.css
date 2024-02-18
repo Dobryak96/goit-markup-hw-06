@@ -55,6 +55,7 @@ img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
+    margin: 0 auto;
 }
 
 .main-navigation {
