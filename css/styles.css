@@ -29,26 +29,27 @@ ol {
 
 img {
     display: block;
+    max-width: 100%;
+    object-fit: cover;
 }
 
 .container {
     width: 1158px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
 }
 
 .section {
     padding: 120px 0;
 }
 
-.page-header {
-    border-bottom: 1px solid #e7e9fc;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 
 /* ****Header***** */
+.page-header {
+    width: 1440px;
+    margin: auto;
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .page-header-container {
     display: flex;
@@ -59,7 +60,7 @@ img {
 .main-navigation {
     display: flex;
     justify-content: space-between;
-    margin-left: 156px;
+    margin-left: px;
     align-items: center;
 }
 
@@ -71,7 +72,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-right: 76px
 }
 
 .menu {
@@ -250,13 +250,14 @@ img {
 
 .text-team-list {
     display: flex;
-    flex-direction: row;
     gap: 24px;
 }
 
 .nav-list {
-    width: calc((100% - 3 * 24px) / 4);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    max-width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    background: #fff;
 }
 
 .person-list {
