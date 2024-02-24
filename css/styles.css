@@ -42,13 +42,15 @@ img {
     padding: 120px 0;
 }
 
-
-
 /* ****Header***** */
+
 .page-header {
     width: 1440px;
     margin: auto;
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -92,14 +94,42 @@ img {
 }
 
 .nav-link {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link-current {
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #404bbf;
     padding-top: 24px;
     padding-bottom: 24px;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.nav-link-current::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+    left: 0;
+    bottom: -1px;
+    border: none;
+
 }
 
 .nav-link:hover,
@@ -134,6 +164,13 @@ img {
 
 .top-section {
     background: #2e2f42;
+    background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/hero/people_office.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 1440px;
     height: 600px;
     margin: auto;
@@ -173,6 +210,7 @@ img {
     height: 56px;
     min-width: 169px;
     border: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .button-text:hover,
@@ -204,6 +242,17 @@ img {
 
 .section-list-item {
     width: calc((100% - 72px) / 4);
+}
+
+.icon-container {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .personal-qualities {
