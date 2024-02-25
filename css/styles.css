@@ -156,6 +156,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -174,7 +175,7 @@ img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1440px;
+    max-width: 1440px;
     height: 600px;
     margin: auto;
     padding-top: 188px;
@@ -214,6 +215,7 @@ img {
     min-width: 169px;
     border: none;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-text:hover,
@@ -256,6 +258,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
 }
 
 .personal-qualities {
@@ -362,7 +365,12 @@ img {
 
 .icon.team-list:hover,
 .icon-team-list:focus {
-    background: #31d0aa;
+    background-color: #404bbf;
+    ;
+}
+
+.team {
+    fill: #f4f4fd;
 }
 
 /* ****Section 4***** */
@@ -393,6 +401,13 @@ img {
 .content-portfolio-list {
     width: calc((100% - 48px) / 3);
     position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-portfolio-list:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .page-portflio {
@@ -504,4 +519,13 @@ img {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;
+}
+
+.icon-team-list:hover,
+.icon-team-list:focus {
+    background-color: #31d0aa
+}
+
+.social-icon {
+    gap: 16px;
 }
