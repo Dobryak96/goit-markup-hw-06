@@ -209,6 +209,7 @@ img {
     display: block;
     border: none;
     margin: 0 auto;
+    white-space: nowrap;
     border-radius: 4px;
     max-width: 169px;
     height: 56px;
