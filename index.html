@@ -467,15 +467,17 @@
                         class="textarea-text"></textarea>
                 </div>
                 <div class="form2">
-                    <input id="user-privacy" type="checkbox" value="true" name="user-privacy">
-                    <label for="user-privacy" class="agreement-text">
-                        I accept the terms and conditions of the
-                        <span class="agreement_link">Privacy Policy
-                            <svg width="10" height="8" class="icon-pricvacy">
-                                <use href="./images/icons.svg#icon-Checkbox"></use>
-                            </svg>
-                        </span>
-                    </label>
+                    <input id="user-privacy" type="checkbox" value="true" name="user-privacy" class="visually-hidden">
+                    <div class="label-privacy">
+                        <label for="user-privacy" class="agreement-text">
+                            <span class="agreement_link">I accept the terms and conditions of the
+                                <svg width="10" height="8" class="icon-pricvacy">
+                                    <a class="modul-link" href="#">Privacy Policy</a>
+                                    <use href="./images/icons.svg#icon-Checkbox"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </div>
                 </div>
                 <button type="submit" class="button-text-modal">Sent</button>
             </form>
