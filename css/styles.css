@@ -639,6 +639,7 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -648,20 +649,24 @@ img {
 }
 
 .modul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     border-radius: 4px;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     margin: auto;
-    margin-top: 80px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .btn-close {
     position: absolute;
-    margin-top: 22px;
-    margin-right: 24px;
-    margin-left: 360px;
+    top: 24px;
+    right: 24px;
     display: flex;
     width: 24px;
     height: 24px;
@@ -672,18 +677,18 @@ img {
     align-items: center;
     cursor: pointer;
     padding: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-close:hover,
 .btn-close:focus {
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 }
 
 .modul-text {
@@ -693,7 +698,6 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-top: 70px;
     margin-bottom: 16px;
 }
 
@@ -721,12 +725,15 @@ img {
 }
 
 .label {
+    display: block;
     cursor: default;
     font-weight: 400;
     font-size: 12px;
+    line-height: 1.17;
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 4px;
 }
 
 .field {
@@ -751,6 +758,11 @@ img {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #4D5AE5;
+}
+
+.comment-div {
+    margin-bottom: 16px;
 }
 
 #myInput:focus-within+.modul-name-icon-svg path {
@@ -762,15 +774,22 @@ img {
 }
 
 .textarea-text {
-    width: 360px;
-    height: 320px;
-    padding-left: 16px;
-    padding-top: 8px;
-    margin-top: 4px;
-    margin-bottom: 13px;
-    resize: none;
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    width: 100%;
+    height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    outline: transparent;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea-text:focus {
+    border-color: #4D5AE5;
 }
 
 .field-text {
@@ -793,23 +812,22 @@ img {
 }
 
 .form2 {
+    margin-bottom: 24px;
     width: 360px;
     height: 16px;
     display: inline;
 }
 
 .agreement-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
-}
-
-.checkbox {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
 }
 
 .checkbox-icon {
@@ -821,31 +839,35 @@ img {
 }
 
 .agreement_link {
-    line-height: 1.33333;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-    color: #4d5ae5;
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
+    color: #4d5ae5
 }
 
+.icon-pricvacy {}
+
+.visually-hidden {}
+
 .button-text-modal {
-    font-weight: 500;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    text-align: center;
     color: #fff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-radius: 4px;
     padding: 16px 32px;
     width: 169px;
     height: 56px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
-    cursor: pointer;
-    display: block;
-    border: none;
-    margin: 0 auto;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-top: 23px;
+    margin: auto;
 }
 
 .button-text-modal:hover,
