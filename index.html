@@ -46,7 +46,8 @@
         <section class="top-section section">
             <div class="container">
                 <h1 class="top-text">Effective Solutions for Your Business</h1>
-                <button type="button" class="button-text">Order Service</button>
+                <button type="button" class="button-text">Order
+                    Service</button>
             </div>
         </section>
         <!--Section 2-->
@@ -360,6 +361,8 @@
         </section>
     </main>
 
+    <!--Footer-->
+
     <footer class="page-footer">
         <div class="container footer-container">
             <div class="footer-container-logo">
@@ -412,7 +415,7 @@
                     </label>
                     <button type="submit" class="button-text-sent">Subscribe
                         <svg class="btn-sumbit" fill:white width="24" height="24">
-                            <use href="./images/icons.svg#icon-Frame-3"></use>
+                            <use href="./images/icons.svg#icon-Frame"></use>
                         </svg>
                     </button>
                 </form>
@@ -420,6 +423,61 @@
         </div>
     </footer>
 
+    <!--Modal-->
+
+    <div class="backdrop is-open">
+        <div class="modul">
+            <button class="btn-close" type="button" name="close" data-modal-close>
+                <svg class="close-icon" width="8" hidden="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+                </svg>
+            </button>
+            <p class="modul-text">Leave your contacts and we will call you back</p>
+            <form class="form">
+                <div class="modul-div">
+                    <label class="label" for="user_name">Name</label>
+                    <div class="modul-box">
+                        <input class="field" id="user-name" type="name">
+                        <svg class="modul-icon-svg" width="18" height="24">
+                            <use href="/images/icons.svg#icon-person-black-18dp-1-2"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modul-div">
+                    <label class="label" for="user-phone">Phone</label>
+                    <div class="modul-box">
+                        <input class="field" id="user-phone" type="tel">
+                        <svg class="modul-icon-svg" width="18" height="24">
+                            <use href="/images/icons.svg#icon-phone-black-18dp-1-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modul-div">
+                    <label class="label" for="user-email">Email</label>
+                    <div class="modul-box">
+                        <input class="field" id="user-email" type="email">
+                        <svg class="modul-icon-svg" width="18" height="24">
+                            <use href="/images/icons.svg#icon-email-black-18dp-1-1"></use>
+                        </svg>
+                    </div>
+
+                </div>
+                <label class="label" for="user-comment">Comment</label>
+                <textarea class="textarea-text" id="user-comment" name="user-comment"
+                    placeholder="Text input"></textarea>
+                <div class="form2">
+                    <input class="checkbox" type="checkbox" name="user-privacy" id="user-privacy">
+                    <label class="agreement-text" for="user-privacy">
+                        I accept the terms and conditions of the
+                        <span class="agreement_link">Privacy Policy</span>
+                    </label>
+                    <button type="submit" class="button-text-modal">Sent</button>
+                </div>
+        </div>
+        </form>
+    </div>
+    </div>
+    </div>
 </body>
 
 </html>
