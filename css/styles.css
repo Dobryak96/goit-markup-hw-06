@@ -730,7 +730,6 @@ img {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
-    line-height: 1.16667;
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-bottom: 4px;
@@ -812,7 +811,7 @@ img {
     margin: auto;
 }
 
-.form2 {
+.form-checkbox {
     margin-bottom: 24px;
 }
 
@@ -821,6 +820,10 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+}
+
+.modul-link {
+    color: #4d5ae5;
 }
 
 .checkbox-icon {
