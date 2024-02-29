@@ -746,28 +746,19 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon path,
-.field:focus {
-    border-color: #4D5AE5;
-}
-
 .modul-icon-svg {
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #4D5AE5;
 }
 
 .comment-div {
     margin-bottom: 16px;
 }
 
-#myInput:focus-within+.modul-name-icon-svg path {
-    fill: none;
-}
-
+.modul-icon-svg:hover,
 .modul-icon-svg:focus {
     fill: #4D5AE5;
 }
@@ -845,16 +836,14 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    background-color: #4d5ae5;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .agreement-link:hover,
 .agreement-link:focus {
     border-color: #4d5ae5;
-}
-
-.checkbox-input:checked+.agreement-link {
-    background-color: #4d5ae5;
-    border: none;
 }
 
 .visually-hidden:checked {
@@ -864,8 +853,6 @@ img {
 
 .icon-privacy {
     fill: #f4f4fd;
-    width: 16px;
-    height: 16px;
 }
 
 .label-privacy {
