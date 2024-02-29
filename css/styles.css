@@ -824,6 +824,7 @@ img {
 
 .modul-link {
     color: #4d5ae5;
+    text-decoration: underline;
 }
 
 .checkbox-icon {
@@ -834,7 +835,7 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
 }
 
-.agreement_link {
+.agreement-link {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -846,9 +847,25 @@ img {
     fill: transparent;
 }
 
+.agreement-link:hover,
+.agreement-link:focus {
+    border-color: #4d5ae5;
+}
+
+.checkbox-input:checked+.agreement-link {
+    background-color: #4d5ae5;
+    border: none;
+}
+
 .visually-hidden:checked {
     border: none;
     fill: #F4F4FD;
+}
+
+.icon-privacy {
+    fill: #f4f4fd;
+    width: 16px;
+    height: 16px;
 }
 
 .label-privacy {
