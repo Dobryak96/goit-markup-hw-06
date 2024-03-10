@@ -1221,7 +1221,7 @@ img {
     }
 }
 
-@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
     .top-section {
         background-image: linear-gradient(to bottom,
                 rgba(46, 47, 66, 0.7),
