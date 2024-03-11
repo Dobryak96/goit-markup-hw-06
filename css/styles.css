@@ -768,6 +768,7 @@ img {
         padding: 0 108px;
     }
 
+
     .footer-container-logo,
     .social-media,
     .footer-sent {
@@ -793,7 +794,7 @@ img {
         padding: 100px 0;
     }
 
-    .page-footer.container {
+    .page-footer .container {
         align-items: baseline;
         padding: 0 15px;
     }
@@ -1213,13 +1214,7 @@ img {
 /* =====Mobile menu styles===== */
 
 /*=====2x retina=====*/
-@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .top-section {
-        background-image: url("../images/hero/people-office@2x.jpg");
-    }
-}
-
-@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+@media only screen and (min-resolution: 192dpi) {
     .top-section {
         background-image:
             url("../images/hero/people-office@2x.jpg");
