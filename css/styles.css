@@ -1214,9 +1214,20 @@ img {
 /* =====Mobile menu styles===== */
 
 /*=====2x retina=====*/
-@media only screen and (min-resolution: 192dpi) {
-    .top-section {
-        background-image:
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .about {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url("../images/hero/people-office-mobile@2x.jpg");
+    }
+}
+
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
+    .about {
+        background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
             url("../images/hero/people-office@2x.jpg");
     }
 }
