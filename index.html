@@ -26,7 +26,7 @@
           >
           <ul class="menu">
             <li>
-              <a class="nav-link-current" href="./index.html">Studio </a>
+              <a class="nav-link activ" href="./index.html">Studio </a>
             </li>
             <li><a class="nav-link" href="">Portfolio</a></li>
             <li><a class="nav-link" href="">Contacts</a></li>
@@ -47,7 +47,7 @@
           </ul>
         </address>
         <button class="burger-btn" type="button">
-          <svg width="24" heigth="24">
+          <svg width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
         </button>
@@ -59,7 +59,9 @@
       <section class="top-section section">
         <div class="container">
           <h1 class="top-text">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-text">Order Service</button>
+          <button type="button" class="button-text" id="open-modal-btn">
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -128,6 +130,7 @@
           <ul class="text-team-list">
             <li class="nav-list">
               <img
+                class="img-team"
                 srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
                 src="./images/img-1.jpg"
                 alt="man-with-laptop-presenting-something"
@@ -171,6 +174,7 @@
             </li>
             <li class="nav-list">
               <img
+                class="img-team"
                 srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="positive guy"
@@ -214,6 +218,7 @@
             </li>
             <li class="nav-list">
               <img
+                class="img-team"
                 srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="beautiful-woman-pink-warm-sweater"
@@ -257,6 +262,7 @@
             </li>
             <li class="nav-list">
               <img
+                class="img-team"
                 srcset="./images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x"
                 src="./images/img-4.jpg"
                 alt="confident-handsome-guy-posing-against"
@@ -403,7 +409,7 @@
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="page-portflio">
+              <div class="page-portfolio">
                 <h3 class="link-servis">Screen Illustrations</h3>
                 <p class="link-app">Design</p>
               </div>
@@ -484,11 +490,13 @@
           <form class="form-item">
             <label class="label-item" for="subscribe">
               <input
-                id="subscribe"
                 class="footer-input"
                 type="email"
                 placeholder="E-mail"
                 name="subscribe"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="mango@gmail.com"
+                required
               />
             </label>
             <button type="submit" class="button-text-sent">
@@ -504,9 +512,9 @@
 
     <!--Modal-->
 
-    <div class="backdrop">
+    <div class="backdrop" id="my-modal">
       <div class="modul">
-        <button type="button" class="btn-close">
+        <button type="button" class="btn-close" id="close-my-modal-btn">
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
@@ -583,7 +591,7 @@
               </span>
               <span class="modul-link-text"
                 >I accept the terms and conditions of the
-                <a class="modul-link" href="">Privacy Policy</a>
+                <a class="modul-link" href="#">Privacy Policy</a>
               </span>
             </label>
           </div>
@@ -597,7 +605,7 @@
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
         <button type="button" class="mobile-menu-close-btn">
-          <svg class="mobile-menu-close-icon" width="8" heigth="8">
+          <svg class="mobile-menu-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
         </button>
@@ -652,5 +660,7 @@
         </ul>
       </div>
     </div>
+
+    <script defer src="./js/open-modal.js"></script>
   </body>
 </html>
