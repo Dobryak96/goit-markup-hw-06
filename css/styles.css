@@ -1115,6 +1115,10 @@ img {
 /* ****Modal mobile container***** */
 
 .mobile-container {
+    padding-top: 72px;
+    padding-left: 16px;
+    padding-right: 24px;
+    padding-bottom: 40px;
     position: fixed;
     top: 0;
     left: 0;
@@ -1122,7 +1126,7 @@ img {
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-color: #2e2f42;;
+    background-color: #ffffff;;
     z-index: 999;
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
@@ -1135,23 +1139,25 @@ img {
 
 .mobile-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 24px;
+    right: 24px;
 }
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
+    width: 24px;
+    height: 24px;
+    background-color: #e7e9fc;
     border-radius: 50%;
-    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-toggle:hover,
@@ -1160,19 +1166,17 @@ img {
 }
 
 .list-mobile {
-    margin-top: 80px;
-    margin-left: 40px;
-    margin-bottom: 100px;
+    margin-bottom: 168px;
 }
 
 .nav-link-mobile {
     position: relative;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 1.5;
+    font-size: 36px;
+    line-height: 1.11111;
     letter-spacing: 0.02em;
-    color: #ffffff;
-    padding: 5px 0;
+    color: #2e2f42;
+    padding: 20px 0;
     display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1189,17 +1193,17 @@ img {
 .page-address-mobile {
     display: flex;
     flex-direction: column;
-    gap: 12px; 
+    gap: 24px; 
 }
 
 .address-link-mobile {
     font-style: normal;
-    font-size: 24px;
-    line-height: 1.16;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #ffffff;
+    color: #2e2f42;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 40px;
 }
 
 .address-link-mobile:hover,
@@ -1208,10 +1212,10 @@ img {
 }
 
 .social-icon-mobile-menu {
-    margin-top: 50px;
+    margin-top: 48px;
     justify-content: center;
     display: flex;
-    gap: 24px;
+    gap: 40px;
 }
 @media screen and (min-width: 768px) {
     .form {
