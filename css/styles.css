@@ -1229,7 +1229,6 @@ img {
     
     .mobile-icon-list {
         margin-top: 48px;
-        justify-content: center;
         display: flex;
         gap: 40px;
     }
